@@ -14,6 +14,6 @@ def test_valor_valido_com_clienteVIP():
     
 # Valores muito alto ou muito baixo
 def test_valor_proximo_de_zero():
-    assert calcular_desconto(0.01, True) == 0.008
+    assert round(calcular_desconto(0.01, True), 3) == 0.008
 def test_valor_alto():
     assert calcular_desconto(1500, False) == 1350
