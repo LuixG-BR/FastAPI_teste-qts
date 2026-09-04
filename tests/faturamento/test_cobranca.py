@@ -30,9 +30,9 @@ def test_calcular_valor_final(valor_base, plano, dias_atraso, valor_final):
 
 def test_tempo_processamento_cobranca():
     inicio = time.perf_counter()
-    resultado = processar_cobranca(100, "bronze", 0)
+    resultado = processar_cobranca(350, "OURO", 27)
     fim = time.perf_counter()
     tempo_decorrido = fim - inicio
 
-    assert resultado == 100
+    assert resultado == 349.2
     assert tempo_decorrido < 0.8
