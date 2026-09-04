@@ -17,10 +17,11 @@ from app.faturamento.cobranca import processar_cobranca
         (100, "PRATA", 0, 85),
         (100, "ouro", 0, 75),
         (100, "BRONZE", 5, 110),
+        (100, "pRata", 7, 95.38),
+        (100, "OuRo", 9, 85.7),
         (100, "BronZe", 22, 147.6),
         (100, "prata", 21, 129.28),
-        (100, "OURo", 27, 121.2),
-        (100, "OuRO", 19, 88.7)
+        (100, "OURo", 27, 121.2)
     ]
 )
 def test_calcular_valor_final(valor_base, plano, dias_atraso, valor_final):
